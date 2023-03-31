@@ -1,13 +1,20 @@
 # schema.py
 import strawberry
-import strawberry_django
 
-def get_name() -> str:
-    return "Strawberry"
+from account.schema import AccountMutation, AccountQuery
 
 
 @strawberry.type
-class Query:
-    name: str = strawberry_django.field(resolver=get_name)
+class Query(AccountQuery):
+    pass
 
-schema = strawberry.Schema(query=Query)
+
+@strawberry.type
+class Mutation(AccountMutation):
+    pass
+
+
+schema = strawberry.Schema(
+    query=Query,
+    mutation=Mutation,
+)

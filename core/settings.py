@@ -57,6 +57,7 @@ THIRD_PARTY_APPS = [
 
 # local django apps
 LOCAL_APPS = [
+    "account",
 ]
 
 
@@ -183,6 +184,13 @@ if ON_PRODUCTION:
 else:
     STATICFILES_DIRS = [STATIC_DIR]
 
-# Default primary key field type
 
+# Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Strawberry Definitions
+STRAWBERRY_DJANGO = {
+    "FIELD_DESCRIPTION_FROM_HELP_TEXT": True,
+    "TYPE_DESCRIPTION_FROM_MODEL_DOCSTRING": True,
+}
