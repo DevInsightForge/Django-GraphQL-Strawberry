@@ -1,5 +1,6 @@
 import strawberry
 
+
 @strawberry.input
 class ChatRoom:
     room_name: str

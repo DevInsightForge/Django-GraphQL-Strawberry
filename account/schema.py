@@ -1,5 +1,5 @@
 import strawberry
-from strawberry.django import auth
+from strawberry_django import auth
 from .types import User, UserInput
 
 

@@ -6,13 +6,14 @@ from chat.schema import ChatMutation, ChatQuery, ChatSubscription
 
 
 @strawberry.type
-class Query(AccountQuery,ChatQuery):
+class Query(AccountQuery, ChatQuery):
     pass
 
 
 @strawberry.type
 class Mutation(AccountMutation, ChatMutation):
     pass
+
 
 @strawberry.type
 class Subscription(ChatSubscription):

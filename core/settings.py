@@ -22,7 +22,7 @@ ON_PRODUCTION = config("ON_PRODUCTION", default=False, cast=bool)
 
 
 # Database configurations
-DB_ENGINE = config("DB_ENGINE", default="mysql")
+DB_ENGINE = config("DB_ENGINE", default="postgresql")
 DB_NAME = config("DB_NAME", default="dbname")
 DB_USER = config("DB_USER", default="user")
 DB_PASSWORD = config("DB_PASSWORD", default="password")
