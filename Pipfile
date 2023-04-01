@@ -9,11 +9,9 @@ django-cleanup = "==7.0.0"
 django-cors-headers = "==3.14.0"
 pillow = "==9.4.0"
 python-decouple = "==3.8"
-strawberry-graphql-django = "==0.9.2"
+strawberry-graphql = "==0.168.1"
+channels = "==4.0.0"
 
 [dev-packages]
 daphne = "*"
 black = "*"
-
-[requires]
-python_version = "3.11"

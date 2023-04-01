@@ -52,13 +52,12 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     "corsheaders",
     "django_cleanup",
+    "strawberry.django",
 ]
 
 
 # local django apps
-LOCAL_APPS = [
-    "account",
-]
+LOCAL_APPS = ["account", "chat"]
 
 
 # Django built-in middleware
@@ -187,6 +186,10 @@ else:
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Channel Definitions
+CHANNEL_LAYERS = {"default": {"BACKEND": "channels.layers.InMemoryChannelLayer"}}
 
 
 # Strawberry Definitions

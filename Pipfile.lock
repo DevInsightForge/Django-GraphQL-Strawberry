@@ -1,12 +1,10 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "15671133e8be39c3c6544d2911edde2a220efac26ee31546adf572564f86be1d"
+            "sha256": "39d146502459eb3f7aca13753e1be2d5ba594f8597682a98b63b2dc53411c473"
         },
         "pipfile-spec": 6,
-        "requires": {
-            "python_version": "3.11"
-        },
+        "requires": {},
         "sources": [
             {
                 "name": "pypi",
@@ -23,6 +21,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==3.6.0"
+        },
+        "channels": {
+            "hashes": [
+                "sha256:0ce53507a7da7b148eaa454526e0e05f7da5e5d1c23440e4886cf146981d8420",
+                "sha256:2253334ac76f67cba68c2072273f7e0e67dbdac77eeb7e318f511d2f9a53c5e4"
+            ],
+            "index": "pypi",
+            "version": "==4.0.0"
         },
         "django": {
             "hashes": [
@@ -172,21 +178,12 @@
             "version": "==0.4.3"
         },
         "strawberry-graphql": {
-            "extras": [],
             "hashes": [
                 "sha256:4c8c0aaf1cb7291ec24ddd861eef9e028feaf4240480df748261c47a7d074d13",
                 "sha256:78c9535e77f287085cde80a9dfb0e793fb6f60f30bd9f7f9acdcc6e1edcd02dd"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4.0'",
-            "version": "==0.168.1"
-        },
-        "strawberry-graphql-django": {
-            "hashes": [
-                "sha256:155a744ce6deb5fd0e6061d24f1786d340af70412c8b356739e39be49c2fafb2",
-                "sha256:dcefad606992194cc8c3e7fbef66dad15d3e4a15b7f5bfb9bcae842fd5d033e2"
-            ],
             "index": "pypi",
-            "version": "==0.9.2"
+            "version": "==0.168.1"
         },
         "typing-extensions": {
             "hashes": [
